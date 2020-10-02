@@ -1,0 +1,100 @@
+
+<html>
+    <head>
+        <title>
+           MIN MAX Code
+        </title>
+    </head>
+    <Body>
+        <p>
+        <h3>
+            Problem Statement:
+        </h3>
+        Write a program in any language to find the maximum and minimum element in an array.
+        </p>
+        <hr>
+        <p>
+            <h3>Code</h3>
+            <code>
+                // C program for the above approach<br>
+                #include <limits.h><br>
+                    #include <stdio.h>,<br><br>
+                      
+                    // Function to find the minimum and<br>
+                    // maximum element of the array<br>
+                    void findMinimumMaximum(int arr[], int N)<br> 
+                    {  <br>
+                        int i;<br>
+                      
+                        // variable to store the minimum<br>
+                        // and maximum element<br>
+                        int minE = INT_MAX, maxE = INT_MIN;<br><br> 
+                      
+                        // Traverse the given array<br>
+                        for (i = 0; i < N; i++) { <br><br>
+                      
+                            // If current element is smaller <br>
+                            // than minE then update it<br> 
+                            if (arr[i] < minE) { <br>
+                                minE = arr[i]; <br><br>
+                            } 
+                      
+                            // If current element is greater<br>
+                            // than maxE then update it<br>
+                            if (arr[i] > maxE) { <br>
+                                maxE = arr[i];<br>
+                            }<br> 
+                        } 
+                      
+                        // Print the minimum and maximum element<br>
+                        printf("The minimum element is %d", minE);<br> 
+                        printf("\n");<br>
+                        printf("The maximum element is %d", maxE);<br><br>
+                      
+                        return;<br> 
+                    } <br>
+                      
+                    // Driver Code<br>
+                    int main()<br>
+                    { <br>
+                      
+                        // Given array<br>
+                        int arr[] = { 1, 2, 4, 5 };<br><br>
+                      
+                        // length of the array <br>
+                        int N = sizeof(arr) / sizeof(arr[0]);<br><br> 
+                      
+                        // Function call<br> 
+                        findMinimumMaximum(arr, N);<br><br>
+                      
+                        return 0;<br> 
+                    }<br>
+            
+            </code>
+
+        </p><hr>
+       
+        <samp>
+                <h3>Input:</h3> arr[] = {1, 2, 4, 5}<br>
+                <h3>Output:</h3>The minimum element is 1<br>
+                                The maximum element is 5<br>
+        </samp>
+        <hr>
+        
+        <var>
+            <h3>Variables :</h3> 
+            <small>arr[ ]<br>
+            N<br>
+            i<br>
+            maxE<br>
+            minE<br>
+        </small>
+        </var>
+        <hr>
+        <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy Code</p>
+        <a href="https://www.geeksforgeeks.org/c-program-to-find-the-maximum-and-minimum-element-of-the-array/">Algorithm</a><br>
+        <footer>
+            For any Query contact: abc@gmail.com
+        </footer>
+    </Body>
+</html>
